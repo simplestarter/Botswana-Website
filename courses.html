@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width", initial-scale="1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="style.css">
+        
+    <script src="https://kit.fontawesome.com/35a92bb5ad.js" crossorigin="anonymous"> </script>
+</head>
+
+<body>
+    <div id="home">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><b><a href="index.html">Home</a></b></li>
+                        <li><b><a href="about.html">About</a></b></li>
+                        <li><b><a href="org.html">Facilities</a></b></li>
+                        <li><b><a href="courses.html">Contact Us</a></b></li>
+                        
+                    </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+            <div class="text-box">
+                <h1>Contact Us</h1>
+                
+
+            </div>
+
+    </section>
+</div>
+<!--contact us-->
+    <div id="map">
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.040206620209!2d120.97894027587306!3d14.48238077995848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cdd3f264f55b%3A0x3f835f13ca07d7b7!2sLas%20Pinas%20National%20High%20School%20-%20Main!5e0!3m2!1sen!2sph!4v1707325570355!5m2!1sen!2sph"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h4 style="margin-top: 20px ; text-align: center;" color="#4CAF50">The Senior High School Department of Las Pinas National High School is an integrated building located inside the LPNHS locale.</h4>  
+</section>
+</div>
+
+    <div id="address">
+<section class="contact-us">
+    <div class="rows">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Sultana Road, Tabon I</h5>
+                    <p>Las Piñas City, Philippines</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+28 8250 806</h5>
+                    <p>Monday to Friday, 6AM to 7PM</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>lpnhsshsmain@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+    <div id="query">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+</div>
+        </div>
+    </div>
+</section>
+</div>
+  <!-------- Call to Action -------->
+    <div id="form">
+  <section class="cta">
+    <h1>Ready to learn in the best senior high school in Las Piñas?</h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3WtCGorU1xCzwzPHBLK2TW6PYWUBCmsanFXOkcACDv4r-PQ/viewform" class="hero-btn">Apply Now!</a>
+  
+  </section>
+</div>
+ <footer>
+    <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/LPNHSSHSMAIN"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:lpnhsshsmain@gmail.com"><i class="fa fa-phone"></i></a>
+            <a href="mailto:lpnhsshsmain@gmail.com"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.youtube.com/@laspinasnatlhighschoolshs-2623"><i class="fa fa-youtube"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#home"><b>Home</b></a></li><br>
+                <li><a href="#map">Map</a></li><br>
+                <li><a href="#query">Query Box</a></li><br>
+                <li><a href="#form">Admission Form</a></li>
+                
+            </ul>
+        </div>
+
+        <Gab class="row">LPNHS-SHS Copyright © 2024 LPMAIN - All rights reserved <br>Gab Nase | Vincent Villanueva | Aaron Catihanan | Kobe Lituañas</div>
+    
+    </div>
+</footer>
+    
+
+
+
+       <!--- Toggle Menu--->
+    <script>
+            
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+                navLinks.style.right ="0";
+        }
+            
+        function hideMenu(){
+                navLinks.style.right = "-200px";
+        }
+    </script>    
+</body>
+</html>
